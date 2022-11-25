@@ -98,29 +98,3 @@ void render_layer_state(void){
             oled_write_ln_P(PSTR("[ MODE | UNDEF     ]"), false);
     }
 }
-
-// Render USB State
-void render_usb_state(void) {
-    switch (USB_DeviceState) {
-      case DEVICE_STATE_Unattached:
-			    oled_write_ln_P(PSTR("[ USB  | FREE      ]"), false);
-          break;
-      case DEVICE_STATE_Suspended:
-          oled_write_ln_P(PSTR("[ USB  | SLEEP     ]"), false);
-          break;
-      case DEVICE_STATE_Configured:
-          oled_write_ln_P(PSTR("[ USB  | READY     ]"), false);
-          break;
-      case DEVICE_STATE_Powered:
-          oled_write_ln_P(PSTR("[ USB  | PWRD      ]"), false);
-          break;
-      case DEVICE_STATE_Default:
-          oled_write_ln_P(PSTR("[ USB  | DFLT      ]"), false);
-          break;
-      case DEVICE_STATE_Addressed:
-          oled_write_ln_P(PSTR("[ USB  | ADDRS     ]"), false);
-          break;
-      default:
-          oled_write_ln_P(PSTR("[ USB  | INVALID   ]"), false);
-    }
-}

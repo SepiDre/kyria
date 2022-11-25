@@ -54,7 +54,7 @@ docker container exec --workdir /qmk_firmware qmk qmk compile -kb splitkb/kyria 
   //#define RBGLIGHT_LED_MAP {9,8,6,7,5,3,2,4,1,0,10,12,13,11,14,16,17,15,18,19} // Orients Kyria LEDs for a left half-right half columnar progression.
 #endif
 // Custom Font path
-#define OLED_FONT_H "keyboards/kyria/keymaps/SepiDre/glcdfont.c"
+#define OLED_FONT_H "keyboards/splitkb/kyria/keymaps/sepidre/glcdfont.c"
 #define OLED_DISABLE_TIMEOUT
 
 // The Leader key allows to flexibly assign macros to key sequences.

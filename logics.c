@@ -1,6 +1,10 @@
 #include "keymap_german.h"
 #include "led.c"
 
+#define DE_UE DE_UDIA  // Ü
+#define DE_OE DE_ODIA  // Ö
+#define DE_AE DE_ADIA  // Ä
+
 layer_state_t layer_state_set_user(layer_state_t state) {
     return update_tri_layer_state(state, _NUM, _SYM, _ADJ);
 }
